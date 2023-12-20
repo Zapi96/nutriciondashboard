@@ -94,7 +94,7 @@ def run():
     st.subheader('Evolución de '+selected_medida)
     fig = px.line(df_medidas_selected_t,y = selected_medida)
 
-    st.plotly_chart(fig)
+    st.plotly_chart(fig,use_container_width=True)
 
     st.header('Cálculos')
 
@@ -155,7 +155,7 @@ def run():
     st.subheader('Evolución de '+selected_calculo)
     fig = px.line(df_calculos_selected_t,y = selected_calculo)
 
-    st.plotly_chart(fig)
+    st.plotly_chart(fig,use_container_width=True)
 
 
 
