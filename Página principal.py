@@ -153,7 +153,6 @@ def run():
         subcol2.metric("Mínimo", str(df_calculos_selected_t.min().round(2).values.tolist()[0]) +' '+selected_calculo_units)
 
     st.subheader('Evolución de '+selected_calculo)
-    print(df_calculos_selected_t)
     fig = px.line(df_calculos_selected_t,y = selected_calculo)
 
     st.plotly_chart(fig)
